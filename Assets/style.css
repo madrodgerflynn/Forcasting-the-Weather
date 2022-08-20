@@ -1,0 +1,7 @@
+.navbar {
+    display: flex;
+    color: tan;
+}
+#navContainer {
+border: 5px solid black;
+}
