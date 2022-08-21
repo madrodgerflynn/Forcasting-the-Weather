@@ -1,6 +1,4 @@
-* {
-    background-color: rgb(102, 61, 11);
-}
+
 .navbar {
     display: flex;
     color: tan;
@@ -8,6 +6,30 @@
 .row {
 border: 5px solid black;
 }
+
+#mon {
+    color: beige;
+}
 #tue {
     color: beige;
+}
+#wed {
+    color: beige;
+}
+#thu {
+    color: beige;
+}
+#fri {
+    color: beige;
+}
+.WD-container {
+    height: 70vh;
+    width: 50px;
+
+}
+.day {
+    border: 2px solid beige;
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
