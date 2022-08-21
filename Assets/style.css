@@ -1,7 +1,13 @@
+* {
+    background-color: rgb(102, 61, 11);
+}
 .navbar {
     display: flex;
     color: tan;
 }
-#navContainer {
+.row {
 border: 5px solid black;
+}
+#tue {
+    color: beige;
 }
