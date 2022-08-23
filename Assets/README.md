@@ -12,4 +12,4 @@ The user will be able to see 5 days of forecasts.
 ___________________________________
 
 
-![The Calander](Forcasting-the-Weather\Assets\Screenshot.JPG)
+![The Calander](Screenshot.JPG)
