@@ -8,35 +8,23 @@ var city = "";
 function smSearch() {
   var city = document.getElementById("smTopic").value;
 
-  // var CoordinateURL =
-  //   "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" +
-  //   city +
-  //   "&appid=" +
-  //   APIkey;
-  var CoordinateURL =
-    "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" +
+  var searchCity =
+    "https://api.weatherbit.io/v2.0/current?city=" +
     city +
-    "&appid=" +
-    APIkey;
+    "&units=I&key=" +
+    bitKey;
+  var cityForecast =
+    "https://api.weatherbit.io/v2.0/forecast/daily?days=5&city=" +
+    city +
+    "&units=I&key=" +
+    bitKey;
 
-  getCoordinates(CoordinateURL);
+  getCity(searchCity);
+  getForecast(cityForecast);
 }
 
-function getCoordinates(CoordinateURL) {
-  fetch(CoordinateURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      getWeather(data.coord.lat, data.coord.lon);
-    });
-}
-
-function getWeather(lat, lon) {
-  var weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly&appid=${apiKey}`;
-
-  fetch(weatherURL)
+function getCity(searchCity) {
+  fetch(searchCity)
     .then(function (response) {
       return response.json();
     })
@@ -45,6 +33,24 @@ function getWeather(lat, lon) {
     });
 }
 
-//function () -- function that renders the DOM Showing temp, date, image. etc
-//for loop create elements and then append that to the DOM
-// for (i = 0; i )
+function getForecast(cityForecast) {
+  fetch(cityForecast)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+}
+
+// for (i = 0; i <=5; i++ ) {
+//   link.textContent = data[i]
+//data.data.[0].temp
+//data.data.[0].wind_spd
+//data.data.[0].uv
+//data.data.[0].precip
+// }
+
+//var cardIconUrl =
+// "https://www.weatherbit.io/static/img/icons/" + cardIcon + ".png";
+// data.data.
