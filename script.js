@@ -40,16 +40,20 @@ function getForecast(cityForecast) {
     })
     .then(function (data) {
       console.log(data);
+
+      for (i = 0; i <= 5; i++) {
+        var tempData = data.data.[i].temp
+        var windSpeed = data.data.[i].wind_spd
+        var uv = data.data.[i].uv
+        var precip = data.data.[i].precip
+
+        document.getElementById(`temp${i + 1}`).innerHTML = tempData;
+        
+        
+      }
     });
 }
-
-// for (i = 0; i <=5; i++ ) {
-//   link.textContent = data[i]
-//data.data.[0].temp
-//data.data.[0].wind_spd
-//data.data.[0].uv
-//data.data.[0].precip
-// }
+//
 
 //var cardIconUrl =
 // "https://www.weatherbit.io/static/img/icons/" + cardIcon + ".png";
