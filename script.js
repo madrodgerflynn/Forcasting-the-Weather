@@ -47,7 +47,7 @@ function getForecast(cityForecast) {
         var uv = data.data[i].uv;
         var precip = data.data[i].precip;
         var humidity = data.data[i].rh;
-        var weatherIcon = data.data.weather[i].icon;
+
         console.log(tempData);
 
         document.getElementById("temp" + (i + 1)).innerHTML = tempData;
@@ -55,7 +55,6 @@ function getForecast(cityForecast) {
         document.getElementById("uv" + (i + 1)).innerHTML = uv;
         document.getElementById("precip" + (i + 1)).innerHTML = precip;
         document.getElementById("rh" + (i + 1)).innerHTML = humidity;
-        document.getElementById("icon" + (i + 1)).innerHTML = weatherIcon;
       }
     });
 }
