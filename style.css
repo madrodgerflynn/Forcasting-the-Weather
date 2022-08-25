@@ -1,35 +1,44 @@
-
 .navbar {
-    display: flex;
-    color: tan;
+  display: flex;
+  color: tan;
 }
 .row {
-border: 5px solid black;
+  border: 5px solid black;
 }
 
 #mon {
-    color: beige;
+  color: beige;
 }
 #tue {
-    color: beige;
+  color: beige;
 }
 #wed {
-    color: beige;
+  color: beige;
 }
 #thu {
-    color: beige;
+  color: beige;
 }
 #fri {
-    color: beige;
+  color: beige;
 }
 .WD-container {
-    height: 40vh;
-    width: 50px;
-
+  height: 20rem;
+  width: 50px;
 }
 .day {
-    border: 2px solid beige;
-    display: flex;
-    justify-content: center;
-    background-color: black;
+  border: 2px solid beige;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.weatherList {
+  list-style: none;
+  font-family: "Russo One", sans-serif;
+  font-size: medium;
+  display: grid;
+}
+.currentContainer {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
 }
