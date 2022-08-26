@@ -22,7 +22,7 @@
   color: beige;
 }
 .WD-container {
-  height: 20rem;
+  height: 90%;
   width: 50px;
 }
 .day {
@@ -30,15 +30,27 @@
   display: flex;
   justify-content: center;
   background-color: black;
+  color: beige;
 }
 .weatherList {
   list-style: none;
   font-family: "Russo One", sans-serif;
   font-size: medium;
   display: grid;
+  color: beige;
 }
 .currentContainer {
   display: flex;
   width: 2rem;
   height: 2rem;
+}
+#currentDay {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  background-color: burlywood;
+  list-style: none;
+}
+.ul {
+  list-style: none;
 }

@@ -24,7 +24,6 @@
       </div>
     </nav>
   </header>
-
   <body>
     <div class="container-fluid p-5 bg-primary text-tan text-center">
       <h1>User Information</h1>
@@ -34,9 +33,25 @@
       <input type="text" id="smTopic" />
       <button onclick="smSearch()">Submit</button>
       <input type="reset" />
-      <div class="currentContainer">Current Weather</div>
+      <div class="currentContainer">Current Weather
+        <section><div class="container text-center">
+        <div class="row align-items-start">
+        <div id="currentDay" class="col">
+            <ul>
+              <span>Temp (°F):</span>
+              <li id="currentTemp"></li>
+              <span>Wind Speed (MPH):</span>
+              <li id="currentWindSpeed"></li>
+              <span>UV Index:</span>
+              <li id="currentUv"></li>
+              <span>Precipitation:</span>
+              <li id="currentPrecip"></li>
+              <span>Humidity:</span>
+              <li id="currentRh"></li>
+            </ul>
+        </div></section>
+      </div>
     </div>
-
     <div class="container mt-5">
       <div class="row">
         <div id="Day0" class="col" style="background-color: rgb(23, 133, 184)">
@@ -53,54 +68,85 @@
               <li id="precip1"></li>
               <span>Humidity:</span>
               <li id="rh1"></li>
+              <!-- <li id="date"></li> -->
+              <img id="image1" src=""></img>
             </ul>
           </div>
         </div>
         <div id="Day1" class="col" style="background-color: rgb(15, 51, 172)">
           <h4 class="day">Tuesday</h4>
-          <div class="WD-container"></div>
-          <ul class="weatherList">
-            <li id="temp2">Temp:</li>
-            <li id="wind2"></li>
-            <li id="uv2"></li>
-            <li id="precip2"></li>
-            <li id="rh2"></li>
-          </ul>
+          <div class="WD-container">
+            <ul class="weatherList">
+              <span>Temp (°F):</span>
+              <li id="temp2"></li>
+              <span>Wind Speed (MPH):</span>
+              <li id="wind2"></li>
+              <span>UV Index:</span>
+              <li id="uv2"></li>
+              <span>Precipitation:</span>
+              <li id="precip2"></li>
+              <span>Humidity:</span>
+              <li id="rh2"></li>
+              <img id="image2" src=""></img>
+            </ul>
+          </div>
         </div>
         <div id="Day2" class="col" style="background-color: rgb(45, 17, 167)">
           <h4 class="day">Wednesday</h4>
-          <div class="WD-container"></div>
+          <div class="WD-container">
           <ul class="weatherList">
-            <li id="temp3">temp</li>
+            <span>Temp (°F):</span>
+            <li id="temp3"></li>
+            <span>Wind Speed (MPH):</span>
             <li id="wind3"></li>
+            <span>UV Index:</span>
             <li id="uv3"></li>
+            <span>Precipitation:</span>
             <li id="precip3"></li>
+            <span>Humidity:</span>
             <li id="rh3"></li>
+            <img id="image3" src=""></img>
           </ul>
+        </div>  
         </div>
         <div id="Day3" class="col" style="background-color: rgb(77, 15, 177)">
           <h4 class="day">Thursday</h4>
-          <div class="WD-container"></div>
+          <div class="WD-container">
           <ul class="weatherList">
+            <span>Temp (°F):</span>
             <li id="temp4">temp</li>
+            <span>Wind Speed (MPH):</span>
             <li id="wind4"></li>
+            <span>UV Index:</span>
             <li id="uv4"></li>
+            <span>Precipitation:</span>
             <li id="precip4"></li>
+            <span>Humidity:</span>
             <li id="rh4"></li>
+            <img id="image4" src=""></img>
           </ul>
+          </div>
         </div>
         <div id="Day4" class="col" style="background-color: rgb(95, 8, 167)">
           <h4 class="day">Friday</h4>
-          <div class="WD-container"></div>
+          <div class="WD-container">
           <ul class="weatherList">
+            <span>Temp (°F):</span>
             <li id="temp5">temp</li>
+            <span>Wind Speed (MPH):</span>
             <li id="wind5"></li>
+            <span>UV Index:</span>
             <li id="uv5"></li>
+            <span>Precipitation:</span>
             <li id="precip5"></li>
+            <span>Humidity:</span>
             <li id="rh5"></li>
+            
+            <img id="image5" src=""></img>
           </ul>
         </div>
-      </div>
+        </div>
+      
     </div>
   </body>
   <script src="script.js"></script>

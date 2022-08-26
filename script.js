@@ -47,6 +47,13 @@ function getForecast(cityForecast) {
         var uv = data.data[i].uv;
         var precip = data.data[i].precip;
         var humidity = data.data[i].rh;
+        var dateTime = data.data[i].datetime;
+        var cardIcon =
+          "https://www.weatherbit.io/static/img/icons/" +
+          data.data[i].weather.icon +
+          ".png";
+        console.log(cardIcon);
+        console.log(dateTime);
 
         console.log(tempData);
 
@@ -55,10 +62,8 @@ function getForecast(cityForecast) {
         document.getElementById("uv" + (i + 1)).innerHTML = uv;
         document.getElementById("precip" + (i + 1)).innerHTML = precip;
         document.getElementById("rh" + (i + 1)).innerHTML = humidity;
+        // document.getElementById("date" + (i + 1)).innerHTML = dateTime;
+        document.getElementById("image" + (i + 1)).src = cardIcon;
       }
     });
 }
-//
-
-//var cardIconUrl =
-// "https://www.weatherbit.io/static/img/icons/" + cardIcon + ".png";
