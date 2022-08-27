@@ -1,7 +1,5 @@
 # Forcasting-the-Weather
 
----
-
 ## Description
 
 ---
@@ -19,15 +17,24 @@ so that I can plan a trip accordingly
 
 ## Instalation
 
+The insallation is straightforward. Just open the link in your browser and type the desired city :)
+
 ---
 
-The insallation is straightforward. Just open the link in your browser. :)
+## Usage
+
+---
+
+When the page loads it will be blank.
+Enter the desired 'City" into the search bar.
+Click on the Submit button.
+Viola! You can see the current forecast followed by the next 5 days.
 
 ## Screenshot
 
 ---
 
-![The Calander](Screenshot.JPG)
+![The Calander](Screenshot2.JPG)
 
 ---
 
